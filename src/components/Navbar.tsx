@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg";
+import logo from "../assets/brand-logo.png";
 
 import ThemeSwitcher from "./ThemeSwitcher";
 
