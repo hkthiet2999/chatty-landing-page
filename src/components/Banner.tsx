@@ -32,7 +32,7 @@ const ImageBanner = ({ images }: any) => {
             {isHovered && (
                 <>
                     <button
-                        className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10"
+                        className="absolute text-black dark:text-white left-0 top-1/2 transform -translate-y-1/2 z-10"
                         onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}
                     >
                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
@@ -40,7 +40,7 @@ const ImageBanner = ({ images }: any) => {
                         </svg>
                     </button>
                     <button
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10"
+                        className="absolute text-black dark:text-white right-0 top-1/2 transform -translate-y-1/2 z-10"
                         onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}
                     >
                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
