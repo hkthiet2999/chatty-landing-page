@@ -7,7 +7,13 @@ module.exports = {
       colors: {
         'blue': '#4D7BF3',
         'light-blue': '#4D7BF333',
-      }
+      },
+      width: {
+        '50': '50%',
+      },
+      height: {
+        '30': '30%',
+      },
     },
   },
   plugins: [

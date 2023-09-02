@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ImageBanner = ({ images }) => {
+const ImageBanner = ({ images }: any) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
@@ -9,7 +9,7 @@ const ImageBanner = ({ images }) => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         };
 
-        const id = setInterval(nextSlide, 3000); // Change images every 3 seconds
+        const id = setInterval(nextSlide, 5000);
 
         return () => clearInterval(id);
     }, [images]);
@@ -19,7 +19,7 @@ const ImageBanner = ({ images }) => {
             className="relative hover:opacity-80 transition-opacity"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            style={{ width: '500px', height: '300px' }}
+            style={{ width: '600px', height: '300px' }}
         >
             {images.map((image: any, index: number) => (
                 <img
