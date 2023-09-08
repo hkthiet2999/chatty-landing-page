@@ -8,7 +8,6 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3001:3000" # Mapping Vite's default port to 3001 on the host
-      - "5173:5173" # I'm assuming this is related to another service or feature. If not, you can remove it.
+      - "5173:5173"
     environment:
-      - HOST=0.0.0.0 # This ensures Vite binds to all network interfaces
+      - HOST=0.0.0.0
