@@ -57,17 +57,17 @@ function Body() {
             <h2 className="mb-2 mt-4 text-black dark:text-white">Download <span className="font-extrabold">Chatty App</span> for Desktop</h2>
 
             <div className="flex space-x-4 justify-center">
-                <a href="https://github.com/tdtu-se-202/chatty-app-client/releases/download/v2.0.0/windows-build.zip" download>
+                <a href="https://github.com/tdtu-se-202/chatty-app-client/releases/download/v3.0/windows-build.zip" download>
                     <button className="border-2 border-gray-500 dark:border-gray-400 hover:border-gray-600 bg-transparent text-black dark:text-white hover:text-gray-600 px-4 py-2 rounded-full transition duration-300">
                         <FontAwesomeIcon icon={faWindows} size="2x" />
                     </button>
                 </a>
-                <a href="https://github.com/tdtu-se-202/chatty-app-client/releases/download/v2.0.0/macos-build.zip" download>
+                <a href="https://github.com/tdtu-se-202/chatty-app-client/releases/download/v3.0/macos-build.zip" download>
                     <button className="border-2 border-gray-500 dark:border-gray-400 hover:border-gray-600 bg-transparent text-black dark:text-white hover:text-gray-600 px-4 py-2 rounded-full transition duration-300">
                         <FontAwesomeIcon icon={faApple} size="2x" />
                     </button>
                 </a>
-                <a href="https://github.com/tdtu-se-202/chatty-app-client/releases/download/v2.0.0/linux-build.zip" download>
+                <a href="https://github.com/tdtu-se-202/chatty-app-client/releases/download/v3.0/linux-build.zip" download>
                     <button className="border-2 border-gray-500 dark:border-gray-400 hover:border-gray-600 bg-transparent text-black dark:text-white hover:text-gray-600 px-4 py-2 rounded-full transition duration-300">
                         <FontAwesomeIcon icon={faLinux} size="2x" />
                     </button>
