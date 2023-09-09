@@ -75,7 +75,7 @@ function Body() {
             </div>
 
             <h2 className="mb-2 mt-2 text-black dark:text-white">
-                <a href="https://white-island-00bebbb10.3.azurestaticapps.net/" target="_blank">
+                <a href="https://web.chatty.io.vn/" target="_blank">
                     Or open Chatty App in your Browser
                 </a>
             </h2>
