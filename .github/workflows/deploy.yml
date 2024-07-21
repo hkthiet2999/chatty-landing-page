@@ -26,8 +26,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          GH_ACTION_SECRET: ${{ secrets.GH_ACTION_SECRET }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          npx gh-pages --repo https://github-actions:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/<your-username>/<your-repo>.git --dist build
+          npx gh-pages --repo https://github-actions:${{ secrets.GH_ACTION_SECRET }}@github.com/<your-username>/<your-repo>.git --dist build
