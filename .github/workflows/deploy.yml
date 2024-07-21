@@ -1,4 +1,4 @@
-name: Deploy React App to GitHub Pages@
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -24,10 +24,16 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        env:
-          GH_ACTION_SECRET: ${{ secrets.GH_ACTION_SECRET }}
+      - name: Configure Git user locally
         run: |
           git config --global user.name 'hkthiet2999'
           git config --global user.email 'smoothkt4951@gmail.com'
-          npx gh-pages --repo https://github-actions:${{ secrets.GH_ACTION_SECRET }}@github.com/hkthiet2999/chatty-landing-page.git --dist dist
+
+      - name: List build directory contents
+        run: ls -la dist
+
+      - name: Deploy to GitHub Pages
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          npx gh-pages --repo https://${{ secrets.GH_PAT }}@github.com/hkthiet2999/chatty-landing-page.git --dist dist
