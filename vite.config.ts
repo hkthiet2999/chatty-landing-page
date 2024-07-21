@@ -7,7 +7,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0'
   },
-  build: {
-    outDir: 'dist'
-  }
+  base: "/chatty-landing-page/", // YOUR REPO NAME HERE
 })
