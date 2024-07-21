@@ -30,4 +30,4 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          npx gh-pages --repo https://github-actions:${{ secrets.GH_ACTION_SECRET }}@github.com/<your-username>/<your-repo>.git --dist build
+          npx gh-pages --repo https://github-actions:${{ secrets.GH_ACTION_SECRET }}@github.com/hkthiet2999/chatty-landing-page.git --dist build
